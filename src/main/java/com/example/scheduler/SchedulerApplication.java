@@ -1,4 +1,4 @@
-package src; // match your top-level folder (since SchedulerApplication.java is directly in src)
+package com.example.scheduler;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,4 +9,3 @@ public class SchedulerApplication {
         SpringApplication.run(SchedulerApplication.class, args);
     }
 }
-    
