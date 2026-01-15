@@ -1,18 +1,20 @@
-## Getting Started
+# Java Distributed Job Scheduler (Backend)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+I've created a multithreaded backend job scheduling system built with Java and Spring Boot. This project demonstrates backend concurrency, REST API design, and asynchronous job execution.
 
-## Folder Structure
+## Features
+- Submit jobs via REST API
+- Track job status: PENDING, RUNNING, COMPLETED, FAILED, CANCELLED
+- Asynchronous execution using `ScheduledExecutorService`
+- Thread-safe in-memory storage (`ConcurrentHashMap`)
+- Retry logic and simulated job execution
+- Cancel pending jobs
 
-The workspace contains two folders by default, where:
+## Technologies Used
+- Language: Java
+- Framework: Spring Boot
+- Concurrency: Java Executors, Threads
+- REST API development
+- Data persistence: in-memory storage
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
